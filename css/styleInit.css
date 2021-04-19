@@ -1,0 +1,286 @@
+body, main{
+    padding: 0px;
+    margin: 0px;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* *************************************** */
+/* Inicio */
+
+.container-init, .container-abtUs, 
+.container-question, .container-contact{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.container-init h1, .container-abtUs h1, 
+.container-question h1, .container-contact h1{
+    position: absolute;
+    top: 22vh;
+    letter-spacing: 1px;
+}
+.container-init .row, .container-abtUs .row, 
+.container-question .row, .container-contact .row{
+    width: 70%;
+    height: 55vh;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-direction: row;
+}
+
+.text{
+    width: 70%;
+    padding: 0;
+    justify-content: center;
+    text-align: left;
+}
+.text div{
+    width: 95%;
+    height: 40vh;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: #caeafc;
+    box-shadow: 0px 0px 15px 5px #61A4ED;
+    -webkit-box-shadow: 0px 0px 15px 5px #61A4ED;
+}
+.text article{
+    width: 90%;
+}
+
+.image {
+    width: 30%;
+    height: 45vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    width: 80%;
+    float: right;
+    transition: all 0.7s;
+}
+.image:hover{
+    transform: scale(1.2);
+}
+
+/* *************************************** */
+/* Quienes somos */
+
+.container-abtUs .row div{
+    width: 40%;
+    height: 45vh;
+    margin: 0 10px;
+    flex-direction: row;
+    background-color: #caeafc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px #61A4ED;
+    -webkit-box-shadow: 0px 0px 15px 5px #61A4ED;
+}
+.container-abtUs hgroup h2{
+    text-align: center;
+}
+.container-abtUs .row p{
+    margin: 30px;
+    padding: 5px;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    
+}
+
+
+/* *************************************** */
+/* Preguntas Frecuentes */
+
+.container-question .row .container{
+    width: 100%;
+    margin-top: 16px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 34vw 34vw;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+details{
+    border: 1px solid #000;
+    padding: 2px 4px;
+    font-family: Arial;
+    margin-bottom: 3px;
+    background-color: #caeafc;
+    border-radius: 5px;
+    border: none;
+}
+summary{
+    color: #000;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer; 
+    outline: none; 
+    margin-top: 3px;       
+}
+.container-question  p{
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    margin-top: 4px;
+}
+
+/* *************************************** */
+/* Contactenos */
+
+.container-contact .row{
+    flex-direction: column;
+}
+.container-contact .row .container{
+    background-color: #caeafc;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+}
+.container-contact .row .container .formulario{
+    width: 45%;
+    height: 45vh;
+    margin: 10px;
+    flex-direction: column;
+}
+.container-contact .row .container .formulario{
+    width: 45%;
+    height: 40vh;
+    flex-direction: column;
+}
+.formulario div label{
+    width: 100%;
+    margin: 2px;
+}
+.formulario .opc input{
+    width: 100%;
+    height: 3vh;
+    margin-bottom: 10px;
+}
+.formulario div .ciudad{
+    width: 25%;
+    margin-bottom: 10px;
+}
+.formulario:nth-child(2) .contacto .contacto-hora{
+    width: 100%;
+    margin-top: 8px;
+    flex-direction: row;
+}
+.formulario:nth-child(2) .contacto .contacto-hora label.horario{
+    margin-bottom: 3px;
+}
+.formulario:nth-child(2) .contacto .contacto-hora .hora{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.formulario:nth-child(2) .contacto .contacto-hora .hora .opc1{
+    width: 80%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2px;
+    background-color: #61A4ED;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.formulario:nth-child(2) .contacto .contacto-hora .hora .opc1 label{
+    width: 45%;
+    text-align: left;
+}
+.formulario:nth-child(2) .contacto .contacto-hora .hora .opc1 input{
+    width: 45%;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.container-contact .boton{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    background-color: #caeafc;
+    border-radius: 0 0 10px 10px;
+}
+
+.container-contact .boton button{
+    width: 30%;
+    margin: 0 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 4vh;
+    background-color: #61A4ED;
+    margin-bottom: 20px;
+}
+.container-contact .boton button:hover{
+    color: #caeafc;
+}
+
+@media (max-width: 1080px) {
+   
+    /* ************************ */
+
+    .text{
+        width: 90%;
+    }
+    .text div h2{
+        margin: 2px;
+    }
+    .text article{
+        width: 100%;
+    }
+    
+    /* ************************ */
+
+    .container-abtUs .row div{
+        margin: 0 5px;
+    }
+    .container-abtUs hgroup h2{
+        margin-bottom: 2px;
+    }
+    .container-abtUs .row p{
+        margin: 10px;
+    }
+
+    /* ************************ */
+        
+    .container-contact .row .container{
+        height: 48vh;
+    }
+    
+    .container-contact .boton button{
+        font-size: 1rem;
+        height: 3vh;
+    }
+}

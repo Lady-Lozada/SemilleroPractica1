@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleInit.css">
+    <link rel="shorcut icon" type="image/png" href="../image/Icon_Lady_2.jpg">
+    <title>Practica html-css</title>
+</head>
+<body>
+    <header>
+        <nav class="page-nav">
+            <section class="banner">
+                <div class="row">
+                    <div class="col-100">
+                        <img src="../image/banner1.jpg" alt="">
+                    </div>
+                    <div class="col-100">
+                        <img src="../image/banner2.jpg" alt="">
+                    </div>
+                    <div class="col-100">
+                        <img src="../image/banner3.jpg" alt="">
+                    </div>
+                    <div class="col-100">
+                        <img src="../image/banner4.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            
+            <fieldset>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="abtUs.html">Quienes somos</a></li>
+                    <li><a href="question.html">Preguntas frecuentes</a></li>
+                    <li><a href="contact.html" class="active">Contáctenos</a></li>
+                </ul>
+            </fieldset>
+        </nav>
+    </header>
+    <main>
+        <section class="container-contact" id="contact">
+            <h1>Formulario de contacto</h1>
+            <div class="row">
+                <form class="container">
+                    <div class="formulario">
+                        <div class="opc">
+                            <label for="numId" >Número de identificación</label><br>
+                            <input type="text" id="numId" placeholder="Número de identificación">
+                        </div>
+                        <div class="opc">
+                            <label for="celular" >Celular</label><br>
+                            <input type="text" id="celular" placeholder="Ingrese solo números">
+                        </div>
+                        <div class="opc">
+                            <label for="area" >Área/operación</label><br>
+                            <input type="text" id="numId" placeholder="Área/operación">
+                        </div>
+                        <div class="opc">
+                            <label for="ciudad" >Si necesitamos contactarte teléfonicamente, indícanos donde te encuentras?</label>
+                            <select class="ciudad">
+                                <option value="1">Medellín</option> 
+                                <option value="2">Bógota</option> 
+                                <option value="3">Cali</option>
+                                <option value="4">Cartágena</option> 
+                                <option value="5">Santa Marta</option>
+                                <option value="6">Pereira</option>
+                                <option value="7">Manizales</option>  
+                                <option value="8">Otra</option> 
+                            </select><br>
+                            <label for="ciudad" >Si elegiste otra, indícanos cual?</label><br>
+                            <input type="text" id="ciudad" placeholder="Indícanos donde te encuentras?">
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="opc">
+                            <label for="nombre" >Nombres y Apellidos</label><br>
+                            <input type="text" id="nombre" placeholder="Nombres y Apellidos">
+                        </div>
+                        <div class="opc">
+                            <label for="email" >Email</label><br>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="opc">
+                            <label for="cargo" >Cargo</label><br>
+                            <input type="text" id="cargo" placeholder="Cargo">
+                        </div>
+                        <div class="contacto">
+                            <label for="dias" >Día en el que te podemos contactar: </label>
+                            <input type="date" id="dias" placeholder="Días en los que te podemos contactar"><br>
+                            <div class="contacto-hora">
+                                <label class="horario" for="horario">Horario en el que te podemos contactar</label><br>
+                                <div class="hora">
+                                    <div class="opc1">
+                                        <label for="horaInit">Desde las:</label>
+                                        <input type="time" id="horaInicial">
+                                    </div>
+                                    <div class="opc1">
+                                        <label for="horaEnd">Hasta las:</label>
+                                        <input type="time" id="horaFinal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="boton">
+                    <button type="submit" class="" onclick="alert('Guardado con exito!')">Enviar</button>
+                    <button type="submit" class="" onclick="alert('Eliminado!')">Borrar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="foot">
+            <h3>Lady Yizeth Lozada Polo</h3>
+            <h2>Semillero de desarrollo Konecta</h2>
+        </section>
+    </footer>
+</body>
+</html>
